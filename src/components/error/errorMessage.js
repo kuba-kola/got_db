@@ -1,11 +1,12 @@
 import React from 'react';
-import img from './error.jpg';
+import img from './error.gif';
+import './errorMessage.css';
 
 const ErrorMessage = () => {
     return (
         <>
-            <img src={img}></img>
-            <span>Something goes wrong :(</span>
+            <img alt="error" className="photo" src={img} /> 
+                <span>Something goes wrong :(</span>
         </>
     )
     

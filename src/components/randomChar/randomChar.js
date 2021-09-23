@@ -34,7 +34,7 @@ export default class RandomChar extends Component {
     };
 
    updateChar() {
-        const id = Math.floor(Math.random()*140 + 25);
+        const id = Math.floor(Math.random()*170 + 30); //рандомные персонажи с 30 до 170
         // const id = 1300000 //проверка   
         this.gotService
           .getCharacter(id)
