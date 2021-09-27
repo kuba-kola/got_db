@@ -44,14 +44,28 @@ export default class GotService {
         return this._transformHouse(house);
     }
 
+    isSet(data) {
+        if (data) {
+            return data
+        } else {
+            return 'no info :('
+        }
+    }
+
+    _extractId = (item) => {
+        const idRegExp = /\/([0-9]*)$/;
+        return item.url.match(idRegExp)[1];
+    }
+
+
     _transformChar(char) {
         return{
             
-            name: char.name || 'no info :(',
-            gender: char.gender || 'no info :(',
-            born: char.born || 'no info :(',
-            died: char.died || 'no info :(',
-            culture: char.culture || 'no info :(' 
+            name: char.name,
+            gender: char.gender,
+            born: char.born,
+            died: char.died,
+            culture: char.culture  
         }
     }
 
