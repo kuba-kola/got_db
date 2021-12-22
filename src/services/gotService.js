@@ -61,33 +61,33 @@ export default class GotService {
     _transformChar(char) {
         return{
             
-            name: char.name,
-            gender: char.gender,
-            born: char.born,
-            died: char.died,
-            culture: char.culture  
+            name: char.name || "-",
+            gender: char.gender || "-",
+            born: char.born || "-",
+            died: char.died || "-",
+            culture: char.culture || "-"  
         }
     }
 
     _transformHouse(house) {
         return{
             
-            name: house.name,
-            region: house.region,
-            words: house.words,
-            titles: house.titles,
-            overlord: house.overlord,
-            ancestraWeapons: house.ancestraWeapons 
+            name: house.name || "-",
+            region: house.region || "-",
+            words: house.words || "-",
+            titles: house.titles || "-",
+            overlord: house.overlord || "-",
+            ancestraWeapons: house.ancestraWeapons  || "-"
         }
     }
 
     _transformBook(book) {
         return{
             
-            name: book.name,
-            numberOfPages: book.numberOfPages,
-            publisher: book.publisher,
-            released: book.released
+            name: book.name || "-",
+            numberOfPages: book.numberOfPages || "-",
+            publisher: book.publisher || "-",
+            released: book.released || "-"
         }
     }
 }

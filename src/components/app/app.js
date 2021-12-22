@@ -48,7 +48,7 @@ export default class App extends Component {
                                 {char}
                                 <button 
                                     className="toggle-btn"
-                                    onClick={this.toggleRandomChar}>Toggle</button>
+                                    onClick={this.toggleRandomChar}>HIDE</button>
                             </Col>                    
                         </Row>
 
