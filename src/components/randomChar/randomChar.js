@@ -67,7 +67,11 @@ export default class RandomChar extends Component {
 
 
 const View = ({char}) => {
-    const {name, gender, born, died, culture} = char;
+    let {name, gender, born, died, culture} = char;
+    
+    if (name.length > 10) {
+        name  = name.slice(0, 10) + '...';
+    }
     return (
         <>
             <h4>Random Character: {name}</h4>

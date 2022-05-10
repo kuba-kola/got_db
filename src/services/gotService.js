@@ -58,9 +58,8 @@ export default class GotService {
     }
 
 
-    _transformChar(char) {
-        return{
-            
+    _transformChar(char) {        
+        return {            
             name: char.name || "-",
             gender: char.gender || "-",
             born: char.born || "-",
@@ -70,8 +69,7 @@ export default class GotService {
     }
 
     _transformHouse(house) {
-        return{
-            
+        return {            
             name: house.name || "-",
             region: house.region || "-",
             words: house.words || "-",
@@ -82,8 +80,7 @@ export default class GotService {
     }
 
     _transformBook(book) {
-        return{
-            
+        return {            
             name: book.name || "-",
             numberOfPages: book.numberOfPages || "-",
             publisher: book.publisher || "-",
