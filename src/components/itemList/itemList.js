@@ -1,65 +1,57 @@
-import React, {Component} from 'react';
-import './itemList.css';
+import React, { useState, useEffect } from 'react';
 import Spinner from '../spinner';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import uniqid from "uniqid";
 
-export default class ItemList extends Component {
+import './itemList.css';
 
-    state = {
-        itemList: null
-    }
+const ItemList = ({ getData, renderItem, onItemSelected }) => {
+    const [itemList, setItemList] = useState(null);
 
-    static defaultProps = {
-        onItemSelected: () => {}
-    }
-
-    static propTypes = {
-        onItemSelected: PropTypes.func
-    }
-
-    componentDidMount() {
-        const {getData} = this.props;
-
+    useEffect(() => {
         getData()
-            .then( (itemList) => {
-                this.setState({
-                    itemList
-                })
-            })
-    }
+            .then(itemList => {
+                setItemList(itemList);
+            });
+    }, [getData]);
 
-    renderItems(arr) {
-        return arr.map((item) => {
-            const {id} = item;
-
-            const label = this.props.renderItem(item);
+    const renderItems = arr => {
+        return arr.map(item => {
+            const { id } = item;
+            const label = renderItem(item);
 
             return (
-                <li  
-                    key={id}
+                <li
+                    key={uniqid()}
                     className="list-group-item"
-                    onClick={ () => this.props.onItemSelected(id)}>
+                    onClick={() => onItemSelected(id)}>
                     {label}
                 </li>
-            )
-        })
+            );
+        });
+    };
+
+    if (!itemList) {
+        return <Spinner />;
     }
 
-    render() {
-        const {itemList} = this.state;
+    const items = renderItems(itemList);
 
-        if (!itemList) {
-            return <Spinner/>
-        }
+    return (
+        <ul className="item-list list-group">
+            {items}
+        </ul>
+    );
+};
 
-        const items = this.renderItems(itemList);
+ItemList.propTypes = {
+    getData: PropTypes.func.isRequired,
+    renderItem: PropTypes.func.isRequired,
+    onItemSelected: PropTypes.func
+};
 
+ItemList.defaultProps = {
+    onItemSelected: () => { }
+};
 
-        return (
-            <ul className="item-list list-group">
-                {items}
-            </ul>
-        );
-    }
-}
-
+export default ItemList;
