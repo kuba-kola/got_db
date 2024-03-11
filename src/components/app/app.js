@@ -27,9 +27,7 @@ export default class App extends Component {
         });
     }
     
-    render() {        
-        const char = this.state.showRandomChar ? <RandomChar/> : null; 
-        
+    render() {
         if (this.state.error) {
             return <ErrorMessage/>
         }         
@@ -42,12 +40,11 @@ export default class App extends Component {
                     </Container>
                     <Container>
                         <Row>
-                            <Col lg={{size: 5, offset: 0}}>
-                                {char}
-                                <button 
-                                    className="toggle-btn"
-                                    onClick={this.toggleRandomChar}>HIDE</button>
-                            </Col>                    
+                            <Col>
+                                {this.state.showRandomChar && (
+                                    <RandomChar onClose={this.toggleRandomChar} />
+                                )}
+                            </Col>                 
                         </Row>
 
                         <Route path='/characters' component={CharacterPage} />                       

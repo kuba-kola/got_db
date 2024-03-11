@@ -54,18 +54,18 @@ const GotService = () => {
         if (house && item.overlord) {
             return item.overlord.match(idRegExp)[1];
         }
-        // console.log(item.overlord)
         return item.url.match(idRegExp)[1];
     };
 
     const transformChar = (char) => {
         return {
-            // id: extractId(char),
+            id: extractId(char),
             name: char.name || "-",
             gender: char.gender || "-",
             born: char.born || "-",
             died: char.died || "-",
-            culture: char.culture || "-"
+            culture: char.culture || "-",
+            selectable: char.url,
         }
     };
 
@@ -77,7 +77,8 @@ const GotService = () => {
             words: house.words || "-",
             titles: house.titles || "-",
             overlord: house.overlord || "-",
-            ancestraWeapons: house.ancestraWeapons || "-"
+            ancestraWeapons: house.ancestraWeapons || "-",
+            selectable: house.overlord,
         }
     };
 
@@ -87,7 +88,8 @@ const GotService = () => {
             name: book.name || "-",
             numberOfPages: book.numberOfPages || "-",
             publisher: book.publisher || "-",
-            released: book.released || "-"
+            released: book.released || "-",
+            selectable: book.url,
         }
     };
 

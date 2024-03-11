@@ -1,8 +1,8 @@
 .random-block {
+    width: 540px;
     background-color: #fff;
     padding: 25px 25px 15px 25px;
-    margin-bottom: 100px;
-    
+    margin-bottom: 50px;
 }
 .random-block h4 {
     margin-bottom: 20px;
@@ -10,4 +10,25 @@
 }
 .term {
     font-weight: bold;
+}
+
+.randomTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 550px;
+    overflow-x: hidden;
+}
+
+.closeButton {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.randomRows {
+    max-width: 550px;
+    overflow-x: hidden;
 }
