@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/GOT_db/static/js/runtime~main.1cd4975b.js"
   },
   {
-    "revision": "0060c6bdaecfa87bab81",
-    "url": "/GOT_db/static/js/main.0060c6bd.chunk.js"
+    "revision": "6e3dce92d4ee34086df7",
+    "url": "/GOT_db/static/js/main.6e3dce92.chunk.js"
   },
   {
     "revision": "e24303d8337a32c75131",
     "url": "/GOT_db/static/js/1.e24303d8.chunk.js"
   },
   {
-    "revision": "0060c6bdaecfa87bab81",
-    "url": "/GOT_db/static/css/main.2980e3ec.chunk.css"
+    "revision": "6e3dce92d4ee34086df7",
+    "url": "/GOT_db/static/css/main.841f20d0.chunk.css"
   },
   {
     "revision": "e24303d8337a32c75131",
     "url": "/GOT_db/static/css/1.fddb3242.chunk.css"
   },
   {
-    "revision": "4e28a3800dd5ceb8cd44085860319a9d",
+    "revision": "94b506ab8a2303fc6fe25126d2286957",
     "url": "/GOT_db/index.html"
   }
 ];

@@ -1,7 +1,7 @@
 {
-  "main.css": "/GOT_db/static/css/main.2980e3ec.chunk.css",
-  "main.js": "/GOT_db/static/js/main.0060c6bd.chunk.js",
-  "main.js.map": "/GOT_db/static/js/main.0060c6bd.chunk.js.map",
+  "main.css": "/GOT_db/static/css/main.841f20d0.chunk.css",
+  "main.js": "/GOT_db/static/js/main.6e3dce92.chunk.js",
+  "main.js.map": "/GOT_db/static/js/main.6e3dce92.chunk.js.map",
   "static/css/1.fddb3242.chunk.css": "/GOT_db/static/css/1.fddb3242.chunk.css",
   "static/js/1.e24303d8.chunk.js": "/GOT_db/static/js/1.e24303d8.chunk.js",
   "static/js/1.e24303d8.chunk.js.map": "/GOT_db/static/js/1.e24303d8.chunk.js.map",
@@ -9,8 +9,8 @@
   "runtime~main.js.map": "/GOT_db/static/js/runtime~main.1cd4975b.js.map",
   "static/css/1.fddb3242.chunk.css.map": "/GOT_db/static/css/1.fddb3242.chunk.css.map",
   "static/media/error.gif": "/GOT_db/static/media/error.6fdafc7f.gif",
-  "static/css/main.2980e3ec.chunk.css.map": "/GOT_db/static/css/main.2980e3ec.chunk.css.map",
+  "static/css/main.841f20d0.chunk.css.map": "/GOT_db/static/css/main.841f20d0.chunk.css.map",
   "index.html": "/GOT_db/index.html",
-  "precache-manifest.dff36deb1c43ceb149a6f96bf0127014.js": "/GOT_db/precache-manifest.dff36deb1c43ceb149a6f96bf0127014.js",
+  "precache-manifest.0284f7c3e1f351faeedae0262cf0babd.js": "/GOT_db/precache-manifest.0284f7c3e1f351faeedae0262cf0babd.js",
   "service-worker.js": "/GOT_db/service-worker.js"
 }
