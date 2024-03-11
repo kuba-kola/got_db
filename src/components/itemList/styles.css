@@ -1,0 +1,9 @@
+.item-list .list-group-item {
+    cursor: pointer;
+}
+
+.unSelectable {
+    color: gray;
+    pointer-events: none;
+    text-decoration: line-through;
+}

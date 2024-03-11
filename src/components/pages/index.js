@@ -57,6 +57,7 @@ const ItemPage = ({ fields, page }) => {
 
     const itemList = (
         <ItemList
+            page={page}
             onItemSelected={onItemSelected}
             getData={getListData()}
             renderItem={({ name }) => name}
@@ -67,6 +68,7 @@ const ItemPage = ({ fields, page }) => {
         <ItemDetails
             itemId={selectedItem}
             getData={getDetailsData()}
+            page={page}
         >
             {fields.map((item) =>
                 <Field
