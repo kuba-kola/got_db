@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Twitter App
 
-## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-In the project directory, you can run:
+[Here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) you can find some information on how to perform common tasks.
 
-### `npm start`
+## :hash: Description
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+One of the first projects I completed during my studies. You can check it on [gh-pages](https://kuba-kola.github.io/GOT_db/)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## :blue_book: Table of contents
 
-### `npm test`
+  1. [Technology stack](#computer-technology-stack)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  2. [Additional libraries](#open_book-additional-libraries)
 
-### `npm run build`
+  3. [Prerequisites and Setup](#wrench-prerequisites-and-setup)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  4. [Testing](#question-testing)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  5. [Deployment on Gh-Pages](#satellite-deployment-on-Gh-Pages)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  6. [Coding Styleguides](#writing_hand-coding-styleguides)
 
-### `npm run eject`
+## :computer: Technology stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React 18.2.0](https://reactjs.org/)
+- [Node 10](https://nodejs.org/en/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :open_book: Additional libraries
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [bootstrap](https://getbootstrap.com/)
+- [uniqid](https://github.com/adamhalasz/uniqid/)
+- [reactstrap](https://reactstrap.github.io/?path=/story/home-installation--page)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :wrench: Prerequisites and Setup
 
-## Learn More
+To install all dependencies simply run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm i
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running / Development
 
-### Code Splitting
+You can get app up and running with simple command:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+## :question: Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Run:
 
-### Making a Progressive Web App
+```bash
+npm test
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## :satellite: Deployment on Gh-Pages
 
-### Advanced Configuration
+First, run the build:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```bash
+npm run predeploy
+```
 
-### Deployment
+Then run deployment:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```bash
+npm run deploy
+```
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## :writing_hand: Coding Styleguides
+
+The app uses eslint and stylelint to enforce a strict coding style.
