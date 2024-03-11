@@ -3,11 +3,12 @@ import {Col, Row, Container} from 'reactstrap';
 import Header from '../header';
 import RandomChar from '../randomChar';
 import ErrorMessage from '../errorMessage';
-import {CharacterPage, BooksPage, HousesPage, BooksItem} from '../pages';
+import ItemPage from '../pages/index.js';
 import gotService from '../../services/gotService';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import './app.css';
+import { bookFields, charFields, houseFields } from '../../shared/fields';
 
 
 export default class App extends Component {
@@ -32,9 +33,9 @@ export default class App extends Component {
             return <ErrorMessage/>
         }         
         
-        return (            
+        return (
             <Router>
-                <div className="app"> 
+                <div className="app">
                     <Container>
                         <Header />
                     </Container>
@@ -44,17 +45,31 @@ export default class App extends Component {
                                 {this.state.showRandomChar && (
                                     <RandomChar onClose={this.toggleRandomChar} />
                                 )}
-                            </Col>                 
+                            </Col>
                         </Row>
 
-                        <Route path='/characters' component={CharacterPage} />                       
-                        <Route path='/houses' exact component={HousesPage} />
-                        <Route path='/books' component={BooksPage} />
-                        <Route path='/books/:id' render={({match}) => {
-                            const {id} = match.params;
-                        return <BooksItem bookId={id}/>}}/>                         
+                        <Switch>
+                            <Route path='/characters'>
+                                <ItemPage
+                                    fields={charFields}
+                                    page="characters"
+                                />
+                            </Route>
+                            <Route path='/houses'>
+                                <ItemPage
+                                    fields={houseFields}
+                                    page="houses"
+                                />
+                            </Route>
+                            <Route path='/books'>
+                                <ItemPage
+                                    fields={bookFields}
+                                    page="books"
+                                />
+                            </Route>
+                        </Switch>
                     </Container>
-                 </div>
+                </div>
             </Router>
         );
     }

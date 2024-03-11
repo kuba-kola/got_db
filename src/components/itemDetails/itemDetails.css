@@ -14,3 +14,11 @@
     text-align: center;
     font-size: 26px;
 }
+
+.term {
+    padding-right: 15px;
+}
+
+.description {
+    text-align: end;
+}

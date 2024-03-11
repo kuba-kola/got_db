@@ -12,3 +12,7 @@
 .toggle-btn:focus {
     outline: none;
 }
+
+.container { 
+ background-color: black;
+}
