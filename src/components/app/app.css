@@ -9,10 +9,7 @@
     box-shadow: 0px 0px 30px rgba(256,256,256,.1);
     cursor: pointer;
 }
+
 .toggle-btn:focus {
     outline: none;
-}
-
-.container { 
- background-color: black;
 }

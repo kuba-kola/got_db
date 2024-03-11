@@ -11,8 +11,8 @@ export const bookFields = [
     },
     {
         id: "released",
-        field: 'publisher',
-        label: 'Publisher'
+        field: 'released',
+        label: 'Released'
     },
 ];
 
