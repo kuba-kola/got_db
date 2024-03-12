@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## :hash: Description
 
-One of the first projects I completed during my studies. You can check it on [gh-pages](https://kuba-kola.github.io/GOT_db/)
+One of the first projects I did during my studies to show the skill of interacting with third-party APIs, getting and processing data. 
+You can check it on [gh-pages](https://kuba-kola.github.io/GOT_db/)
 
 ## :blue_book: Table of contents
 
